@@ -1,0 +1,34 @@
+<!-- Nawaf MOhammed Ayyash Ibrahim - 2140924 -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>GitHub Repository Info</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="media/github_icon.png" type="image/GitHub-icon">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <div class="container wrapper">
+        <h1>GitHub Repository Info</h1>
+        <form id="repoForm">
+            <label for="usernameInput">GitHub Username:</label>
+            <input type="text" id="usernameInput" required autofocus>
+            <button type="submit">Get Repositories</button>
+            <button type="button" id="clearButton">Clear</button>
+            <label for="sortOption">Sort by:</label>
+            <select id="sortOption">
+                <option value="name">Name</option>
+                <option value="stars">Stars</option>
+                <option value="updated">Last Updated</option>
+            </select>
+        </form>
+        <div id="errorMessage"></div>
+        <div id="repoList"></div>
+    </div>
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>
